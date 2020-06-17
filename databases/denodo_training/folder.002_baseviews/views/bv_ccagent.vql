@@ -18,7 +18,7 @@ CREATE OR REPLACE TABLE bv_ccagent I18N au_cst (
         agent_name:text (sourcetypeid = '12', sourcetyperadix = '10', sourcetypesize = '50', description = '')
     )
     FOLDER = '/002_baseviews'
-    CONSTRAINT 'PRIMARY' PRIMARY KEY ( 'agent_id' )
+    PRIMARY KEY ( 'agent_name' )
     CACHE OFF
     TIMETOLIVEINCACHE DEFAULT
     ADD SEARCHMETHOD bv_ccagent(
